@@ -13,7 +13,7 @@ People with this genetic condition have specific characteristics, which require 
 ### Organization:
 
 There are three test cases separated by individual folders, they can be understood as different projects. Except for test case 0, which does not use a microcontroller, the projects contain the following elements:
-- **  Source code:** is the source code produced in  [Processing IDE](https://processing.org/download). It consists of the sequence of activations necessary for the interactive manga, and integrates with Arduino, which enables communication between the manga and the system that reproduces the logic. 
+- **Source code:** is the source code produced in  [Processing IDE](https://processing.org/download). It consists of the sequence of activations necessary for the interactive manga, and integrates with Arduino, which enables communication between the manga and the system that reproduces the logic. 
 	- The Arduino is loaded with the lib [Standard Firmata](https://www.arduino.cc/reference/en/libraries/firmata/), which allows standardized communication with any interactive manga built following these conventions.
 - **MangaSticker Project:** is the project generated using the MangaSticker software, one of the products of this research:
 	- MangaSticker allows you to edit the interactive manga interface, combining circuit components, which follow the [Circuit Stickers](https://www.media.mit.edu/projects/circuit-stickers/overview/) pattern, with the manga frames. The application gives complete creative freedom to build tangible interfaces using paper and circuits, so it is not limited to the topic of manga, but was initially developed with this focus.
