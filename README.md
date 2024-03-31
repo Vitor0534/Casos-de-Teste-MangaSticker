@@ -60,7 +60,9 @@ Gustavo é um garoto que coleciona notas de real, ele convida o interlocutor par
 ![enter image description here](./Caso%20de%20teste%201/Simulacao%20do%20circuito/cena%20principal%202.jpg)
 
 
-- **Caso de teste 2:** Sara é uma garota que inventa diversas brincadeiras, dessa vez ela monta um tipo de "venda" de brinquedos. O interlocutor entra na brincadeira e utiliza cliques nos quadros para comprar os itens do "mercadinho na sala" que a personagem montou
+**Caso de teste 2:** 
+
+Sara é uma garota que inventa diversas brincadeiras, dessa vez ela monta um tipo de "venda" de brinquedos. O interlocutor entra na brincadeira e utiliza cliques nos quadros para comprar os itens do "mercadinho na sala" que a personagem montou
 
 ![enter image description here](./Caso%20de%20teste%202/Simulacao%20do%20circuito/face_Manga.jpg)
 
