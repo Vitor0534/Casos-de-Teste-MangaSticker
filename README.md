@@ -1,72 +1,74 @@
-
-# Casos de teste de mangás interativos implementados usando MangaSticker
+# Interactive Manga Test Cases Implemented Using MangaSticker
 
 ### Autor: Vitor de Almeida Silva, PUC-GO/TCC - 2020
 
-### Breve explicação
+### Brief explanation
 
-O presente repositório contem os arquivos dos três casos de testes de mangás interativos desenvolvidos durante meu TCC.  Os projetos têm o objetivo de servirem como ferramentas para treinamento de pessoas com Síndrome de Down em habilidades simples de manipulação de dinheiro. 
 
-Pessoas com essa condição genética apresentam caracetísticas específicas, que exigem uma abordagem diferente nos treinamentos. Mais detalhes foram relatados no artigo publicado sobre o projeto:
+This repository contains the files of the three interactive manga test cases developed during my TCC. The projects aim to serve as tools for training people with Down Syndrome in simple money handling skills.
+
+People with this genetic condition have specific characteristics, which require a different approach to training. More details were reported in the article published about the project:
 - [MangaSticker: A Tool To Build Interactive Manga](https://ijcaonline.org/archives/volume174/number11/31723-2021920989/)
 
-### Como estão organizados:
+### Organization:
 
-São três casos de testes separados por pastas individuais, podem ser entendidos como projetos diferentes. Salvo o caso de teste 0, que não usa microcontrolador, os projetos cotém os seguintes elementos:
-- **Código fonte:** é o código-fonte produzido no [Processing IDE](https://processing.org/download). Consiste da sequência de acionamentos necessário para o mangá interativo, inclusive, se integra ao Arduino, que possibilita a comunicação entre o mangá e o sistema que reproduz a lógica. 
-	- O Arduíno é gravado com a lib [Standard Firmata](https://www.arduino.cc/reference/en/libraries/firmata/), que possibilita a comunicação padronizada com qualquer mangá interativo construído seguindo essas convenções.
-- **Projeto do MangaSticker:** é o projeto gerado usando o software MangaSticker, um dos produtos dessa pesquisa:
-	- O MangaSticker permite editar a interface do mangá interativo, combinando os componentes de circuito, que seguem o padrão de [Circuit Stickers](https://www.media.mit.edu/projects/circuit-stickers/overview/), com os quadros de mangá. A aplicação dá total liberdade criativa para construir interfaces tangíveis usando papel e circuitos, logo, não se limita ao tópico de mangás, mas foi inicialmente desenvolvido com esse foco.
-	- O código-fonte do MangaSticker é mantido de forma pública pelos pesquisadores do grupo de TCC no seguinte repositório:
+There are three test cases separated by individual folders, they can be understood as different projects. Except for test case 0, which does not use a microcontroller, the projects contain the following elements:
+- **  Source code:** is the source code produced in  [Processing IDE](https://processing.org/download). It consists of the sequence of activations necessary for the interactive manga, and integrates with Arduino, which enables communication between the manga and the system that reproduces the logic. 
+	- The Arduino is loaded with the lib [Standard Firmata](https://www.arduino.cc/reference/en/libraries/firmata/), which allows standardized communication with any interactive manga built following these conventions.
+- **MangaSticker Project:** is the project generated using the MangaSticker software, one of the products of this research:
+	- MangaSticker allows you to edit the interactive manga interface, combining circuit components, which follow the [Circuit Stickers](https://www.media.mit.edu/projects/circuit-stickers/overview/) pattern, with the manga frames. The application gives complete creative freedom to build tangible interfaces using paper and circuits, so it is not limited to the topic of manga, but was initially developed with this focus.
+	- The MangaSticker source code is publicly maintained by TCC group researchers in the following repository:
 		- [MangaSticker github](https://github.com/Vitor0534/MangaSticker)
-- **Simulação do circuito:** para testar o sistema antes de implementar a versão física, foram construídas simulações no software [Proteus v8.2](https://www.labcenter.com/), não é um passo obrigatório, mas é recomendado para evitar gastos desnecessários de tempo e componentes.
+- **Circuit simulation:** To test the system before implementing the physical version, simulations were built in the software [Proteus v8.2](https://www.labcenter.com/), It is not a mandatory step, but it is recommended to avoid unnecessary expenditure of time and components.
 
-### Dependências de desenvolvimento:
+### Development dependencies:
 
-Primeiro é necessário certificar-se de que as dependências de sistema e desenvolvimento estão configuradas corretamente:
-- Ambiente de desenvolvimento:
+First you need to make sure that the system and development dependencies are configured correctly:
+-   Development environment:
 	- [Arduino IDE](https://www.arduino.cc/en/software)
 	- [Processing IDE](https://processing.org/download)
-	- [Proteus](https://www.labcenter.com/): caso seja necessário simular os circuitos
-	- [MangaSticker](https://github.com/Vitor0534/MangaSticker): caso seja necessário modelar os mangás interativos
-- libs de desenvolvimento:
-	- [Firmata:](https://www.arduino.cc/reference/en/libraries/firmata/) o Arduíno deve ser gravado com esse código antes de ser integrado ao sistema
-	- [com0com:](https://com0com.sourceforge.net/) simulador de porta serial, necessário para executar as simulações no Proteus
+	- [Proteus](https://www.labcenter.com/): if it is necessary to simulate the circuits
+	- [MangaSticker](https://github.com/Vitor0534/MangaSticker):  if it is necessary to model interactive manga
+- Development libs:
+	- [Firmata:](https://www.arduino.cc/reference/en/libraries/firmata/) the Arduino must be loaded with this code before being integrated into the system
+	- [com0com:](https://com0com.sourceforge.net/) serial port simulator, required to run simulations on Proteus
 
-### Como executar os projetos:
+### How to execute the projects:
 
-Os passos para executar o projeto de um mangá interativo são:
+The steps to execute an interactive manga project are:
 
- 1. Abra o código-fonte do mangá usando o Processing
- 2. Grave o Arduino com a lib Firmata
- 3. Organize o circuito do mangá interativo conforme o esquema de conexões juntamente com o Arduino
- 4. Conecte o Arduino ao computador via porta USB
- 5. Execute o código do Processing
+ 1. Open manga source code using Processing
+ 2. Record Arduino with the Firmata lib
+ 3. Organize the interactive manga circuit according to the connection diagram together with Arduino
+ 4. Connect Arduino to computer via USB port
+ 5. Run the Processing code
 
-O processo para executar usando o Proteus é o mesmo. Salvo que, nesse caso, é necessário usar o "simulador" de portas seriais. Indique a porta a ser conectada tanto no arduino do Proteus quanto na conexão no código do Processing.
-
-
-### Sobre os casos de teste
-
-**Caso de teste 0:** 
-
-Foi criado apenas para simulação, ele tem apenas o circuito do Proteus. É o caso mais simples e se baseia na primeira história, com o personagem Gustavo. Contém apenas interações de cliques e luz, sem áudio:
+The process to run using Proteus is the same. Except that, in this case, it is necessary to use the serial port "simulator". Indicate the port to be connected to both the Proteus Arduino and the connection in the Processing code.
 
 
-**Caso de teste 1:** 
+### About test cases
 
-Gustavo é um garoto que coleciona notas de real, ele convida o interlocutor para aprender um pouco sobre sua coleção. O personagem, por meio de cliques nos quadros do mangá, ensina a pessoa a identificar todas as notas usando estímulos de áudio (falas, músicas) e luz (leds):
+**Test Case 0:** 
+
+It was created just for simulation, it only has the Proteus circuit. It is the simplest case and is based on the first story, with the character Gustavo. Contains only click and light interactions, no audio.
+
+**Test Case 1:** 
+
+Gustavo is a boy who collects real (BRL) notes, he invites the interlocutor to learn a little about his collection. The character, through clicks on the manga frames, teaches the person to identify all the notes using audio stimuli (speech, music) and light (LEDs):
 
 ![enter image description here](./Caso%20de%20teste%201/Simulacao%20do%20circuito/cena%20principal%202.jpg)
 
 
-**Caso de teste 2:** 
+**Test Case 2:** 
 
-Sara é uma garota que inventa diversas brincadeiras, dessa vez ela monta um tipo de "venda" de brinquedos. O interlocutor entra na brincadeira e utiliza cliques nos quadros para comprar os itens do "mercadinho na sala" que a personagem montou
+Sara is a girl who invents different games, this time she sets up a kind of toy “sale”. The interlocutor enters the game and clicks on the photos to buy items from the “market in the living room” that the character has set up:
 
 ![enter image description here](./Caso%20de%20teste%202/Simulacao%20do%20circuito/face_Manga.jpg)
 
 
-### Links que podem matar a curiosidade
-- [O que são cirtuit stickers? (1)](https://www.media.mit.edu/projects/circuit-stickers/overview/)
-- [O que são circuit sticker exemplo? (2)](https://www.crowdsupply.com/chibitronics/circuit-stickers)
+### Links that can satisfy curiosity
+- [What are cirtuit stickers? (1)](https://www.media.mit.edu/projects/circuit-stickers/overview/)
+- [What are circuit stickers example? (2)](https://www.crowdsupply.com/chibitronics/circuit-stickers)
+
+
+
